@@ -348,6 +348,7 @@
 //   return count;
 // }
 
+// // DAY 14
 // // Exercise 7: String Properties
 // const movie = {
 //   title: 'a',
@@ -437,4 +438,146 @@
 //     }
 //   }
 // }
-// displayPrimesInRange(1, 100); 
+// displayPrimesInRange(1, 100);
+
+// // OBJECTS
+// // Objected Oriented Programming [OOP]
+// const circle = {
+//   radius: 1,
+//   location: {
+//     x: 1,
+//     y: 1
+//   },
+//   isVisible: true,
+//   draw: function () {
+//     console.log('draw');
+//   }
+// };
+
+// circle.draw(); // Draw Method
+
+// // Factory Function
+// function createCircle() {
+//   return {
+//     radius: 1,
+//     color: 'yellow',
+//     draw() {
+//       console.log('draw');
+//     }
+//   };
+// }
+
+// const Circle = createCircle();
+// console.log(Circle);
+
+// const circle2 = createCircle(2);
+// console.log(circle2);
+
+// // Constructor Function
+// function Circle(radius) {
+//   this.radius = radius;
+//   this.draw = function () {
+//     console.log('draw');
+//   }
+// }
+
+// const circle = new Circle(1);
+
+// // Dynamic Nature of Objects
+// const circle = {
+//   radius: 1
+// };
+
+// // Adding Properties
+// circle.color = 'yellow';
+// circle.draw = function () { }
+
+// // Delete Objects Properties
+// delete circle.color;
+// delete circle.draw;
+
+// console.log(circle);
+
+// Types [Value/Primitive and Reference/Objects Types]
+// Value Types/Primitive are copied by their value
+// Reference Types/Objects are copied by their reference
+// Value Types: Number, String, Boolean, Symbol, Undefined, Null
+// Reference Types: Object, Function, Array
+// All functions in JS are objects
+
+// // Enemurating Properties of an Object
+// const circle = {
+//   radius: 1,
+//   draw() {
+//     console.log('draw');
+//   }
+// };
+
+// for (let key in circle)
+//   console.log(key, circle[key]);
+
+// for (let key of Object.keys(circle))
+//   console.log(key);
+
+// for (let entry of Object.entries(circle))
+//   console.log(entry);
+
+// if ('radius' in circle) console.log('yes');
+
+// // CLONING AN OBJECT
+// const circle = {
+//   radius: 1,
+//   draw() {
+//     console.log('draw');
+//   }
+// };
+
+// // const another = {};
+// // for (let key in circle)
+// // another[key] = circle[key];
+
+// // const another = Object.assign({
+// //   color: 'yellow'
+// // }, circle);
+
+// const another = Object.assign({}, circle);
+
+// const another = { ...circle };
+
+// console.log(another);
+
+//  //  TEMPORAL LITERALS
+// const message =
+//   'This is my\n' +
+//   '\'first\' message';
+
+// const another =
+//   `This is my
+//   first message`;
+
+// // DATE
+// const now = new Date();
+// const date1 = new Date('May 11 2018 09:00');
+// const date2 = new Date(2018, 4, 11, 9, 0);
+
+// now.setFullYear(2017)
+
+// // EXERCISES
+// const post = {
+//   title: 'This is the Title',
+//   body: 'The title is a reference to what is at the top',
+//   author: 'Patrick',
+//   views: `20,000`,
+//   comments: {
+//     author1: {
+//       author: 'Commentor1',
+//       body: "This is my comment"
+//     },
+//     author2: {
+//       author: 'Him',
+//       body: 'This is the body'
+//     }
+//   },
+//   isLive: true
+// }
+// console.log(post);
