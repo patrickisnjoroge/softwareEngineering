@@ -581,3 +581,107 @@
 //   isLive: true
 // }
 // console.log(post);
+
+// // DAY 16
+// // ARRAYS
+// const numbers = [3, 4];
+
+// // Adding Elements
+// //End
+// numbers.push(1, 6);
+
+// // Beginning
+// numbers.unshift(5,2)
+
+// // Middle
+// numbers.splice(2, 0, 'a', 'b');
+
+// console.log(numbers);
+
+// // Finding Elements (Primitives)
+// const numbers = [1, 2, 3, 1, 4];
+
+// console.log(numbers.indexOf('a'));
+// console.log(numbers.indexOf(1, 2));
+// console.log(numbers.lastIndexOf(1));
+
+// console.log(numbers.indexOf(1) !== -1);
+// console.log(numbers.includes(1));
+
+// // Finding Elements (Reference Types)
+// const courses = [
+//   { id: 1, name: 'a' },
+//   { id: 2, name: 'b' },
+// ];
+
+// const course = courses.findIndex(function (course) {
+//   return course.name === 'a';
+// });
+
+// console.log(course);
+
+// // Arrow Functions
+// const courses = [
+//   { id: 1, name: 'a' },
+//   { id: 2, name: 'b' },
+// ];
+
+// const course = courses.find(course => course.name === 'a');
+
+// console.log(course);
+
+// // Removing Elements
+// const numbers = [1, 2, 3, 4];
+
+// // End
+// // Const last = numbers.pop();
+
+// // Beginning
+// // const first = numbers.shift();
+
+// // Middle
+// numbers.splice(2, 2);
+// console.log(numbers);
+
+// // Emptying an array
+// let numbers = [1, 2, 3, 4];
+// let another = numbers;
+
+// // Solution 1
+// // numbers = [];
+
+// // Solution 2
+// // numbers.length = 0;
+
+// // Solution 3
+// // numbers.splice(0, numbers.length);
+
+// // Solution 4
+// while (numbers.length > 0)
+//   numbers.pop();
+
+// console.log(numbers);
+// console.log(another);
+
+// // Combining and Slicing Arrays
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// const combined = first.concat(second);
+
+// const slice = combined.slice(2, 4);
+
+// console.log(combined);
+// console.log(slice);
+
+// // The Spread Separator
+// const first = [1, 2, 3];
+// const second = [4, 5, 6];
+
+// // const combined = first.concat(second);
+// const combined = [...first, 'a', ...second, 'b'];
+
+// // const copy = combined.slice();
+// const copy = [...combined];
+// console.log(combined);
+// console.log(copy);
