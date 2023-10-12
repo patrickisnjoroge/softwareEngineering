@@ -34,7 +34,6 @@
 // selectedColors[2] = 2;
 // console.log(selectedColors.length);
 
-
 // // FIVE
 // //Performing a task
 // function greet(name, lastName) {
@@ -413,7 +412,6 @@
 
 // Exercise 9: Grade
 
-
 // Exercise 10: Stars
 
 // // Exercise: Prime Numbers
@@ -685,3 +683,29 @@
 // const copy = [...combined];
 // console.log(combined);
 // console.log(copy);
+
+// // DAY 19
+// // ARRAYS CONTINUING
+// // ITERATING AN ARRAY
+// const numbers = [1, 2, 3];
+
+// // METHOD 1: FOR ... OF LOOP
+// for (let number of numbers) console.log(number);
+
+// // METHOD 2: FOREACH METHOD
+// numbers.forEach((number) => console.log(number));
+
+// // JOINING ARRAYS
+// const numbers = [1, 2, 3];
+
+// // JOINED METHOD
+// const joined = numbers.join(",");
+// console.log(joined);
+
+// // SPLIT METHOD
+// const message = "This is my first message";
+// const parts = message.split(" ");
+// console.log(parts);
+
+// const combined = parts.join("-");
+// console.log(combined);
