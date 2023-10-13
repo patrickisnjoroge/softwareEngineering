@@ -146,4 +146,93 @@
 # course = "Python \nProgramming"
 # print(course)
 
-#
+# fruit = "Apple"
+# print(fruit[1:0])
+
+# DAY 20
+# CONTROL FLOW
+# 1. COMPARISON OPERATORS
+# > , < and =
+
+# # CONDITIONAL STATEMENTS
+# temperature = 15
+# if temperature > 30:
+#     print("It is warm")
+# elif temperature > 20:
+#     print("It is nice")
+# else:
+#     print("It is cold")
+# print("Program End")
+
+# TERNARY OPERATOR
+# age = 22
+
+# if age >= 18:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# age = 22
+# if age >= 18:
+#     message = "Eligible"
+# else:
+#     message = "Not Eligible"
+# print(message)
+
+# age = 22
+
+# message = "Eligible" if age >= 18 else "Not Eligible"
+# print(message)
+
+# LOGICAL OPERATORS
+# AND OPERATOR. ALL CONDITIONS FULFILLED
+# high_income = True
+# good_credit = True
+
+# if high_income and good_credit:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# # OR OPERATORS. ATLEAST ONE CONDITION FULFILLED
+# high_income = True
+# good_credit = True
+
+# if high_income or good_credit:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# # AND and OR OPERATORS
+# high_income = True
+# good_credit = True
+# student = False
+
+# if (high_income and good_credit) or not student:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# # NOT OPERATOR
+# student = True
+
+# if not student:
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# # CHAINING COMPARISON OPERATORS
+# age = 2
+# if 18 <= age < 65:  # Age is between 18 and 65 # A chained comparison
+#     # if age >= 18 and age < 65: # Without chaining
+#     print("Eligible")
+# else:
+#     print("Not Eligible")
+
+# LOOPS
+# FOR LOOPS. REPEAT SOMETHING A NUMBER OF TIMES
+# for number in range(3):
+#     print("Attempt")
+
+# for number in range(1, 10, 2):
+#     print("Attempt", number, number * ".")

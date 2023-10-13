@@ -709,3 +709,58 @@
 
 // const combined = parts.join("-");
 // console.log(combined);
+
+// // DAY 20
+// // SORTING ARRAYS
+// // SORTING. ASCENDING
+// const numbers = [2, 3, 1];
+// numbers.sort();
+// console.log(numbers);
+
+// // REVERSE. DESCENDING
+// numbers.reverse();
+// console.log(numbers);
+
+// const courses = [
+//   { id: 1, name: "Node.js" },
+//   { id: 2, name: "javaScript" },
+// ];
+
+// courses.sort(function (a, b) {
+//   // a < b => -1
+//   // a > b => 1
+//   // a === b => 0
+
+//   const nameA = a.name.toLowerCase();
+//   const nameB = b.name.toLowerCase();
+
+//   if (nameA < nameB) return -1;
+//   if (nameA > nameB) return 1;
+//   return 0;
+// });
+
+// console.log(courses);
+
+// // TESTING THE ELEMENTS OF AN ARRAY
+// const numbers = [1, 2, 3];
+
+// const allPositive = numbers.every(function (value) {
+//   return value >= 0;
+// });
+
+// console.log(allPositive);
+
+// const numbers = [1, -1, 2, 3];
+
+// const atLeastOnePositive = numbers.some(function (value) {
+//   return value >= 0;
+// });
+
+// console.log(atLeastOnePositive);
+
+// // FILTERING AN ARRAY
+// const numbers = [1, -1, 2, 3];
+
+// const filtered = numbers.filter((n) => n >= 0);
+
+// console.log(filtered);
